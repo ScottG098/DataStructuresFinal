@@ -17,12 +17,4 @@ public class Sort {
 		return temp;
 	}
 	
-	
-	void printArray(Contact[] localArray)
-    {
-        int n = localArray.length;
-        for (int i=0; i<n; ++i)
-            System.out.print(localArray[i]+" ");
-        System.out.println();
-    }
 }

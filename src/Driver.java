@@ -51,9 +51,12 @@ public class Driver {
 				System.out.println("Enter Contact Email:");
 				newContact.setEmail(s.nextLine());
 				newContact.setCompany(newCompany);
+				
 
 				localPartners.add(newContact);
-
+				
+				System.out.println("Is this a priority Contact? Y/N");
+				
 				userInput = getMenuInput();
 
 			}
@@ -113,14 +116,14 @@ public class Driver {
 				localPartners = Sort.sortStack(localPartners);
 				onlinePartners = Sort.sortStack(onlinePartners);
 				
-				System.out.println("Local Business Contacts");
+				System.out.println("Local Business Contacts(Sorted by Name)");
 				for (int x = 0; x < localPartners.size(); x++) {
 					System.out.println(localPartners.get(x));
 				}
 				
 				System.out.println();
 
-				System.out.println("Online Business Contacts");
+				System.out.println("Online Business Contacts(Sorted by Name)");
 				for (int x = 0; x < onlinePartners.size(); x++) {
 					System.out.println(onlinePartners.get(x));
 				}
